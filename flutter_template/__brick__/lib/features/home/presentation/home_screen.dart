@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './core/theme/theme_manager.dart';
+import 'package:{{name.snakeCase()}}/core/theme/theme_manager.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

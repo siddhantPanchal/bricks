@@ -1,5 +1,5 @@
 import 'package:get_it/get_it.dart';
-import 'package:template/core/theme/theme_manager.dart';
+import 'package:{{name.snakeCase()}}/core/theme/theme_manager.dart';
 
 final locator = GetIt.instance;
 
