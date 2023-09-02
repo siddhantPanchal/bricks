@@ -1,7 +1,12 @@
-name: flutter_template_hooks
+name: flutter_template
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  flutter:
+    sdk: flutter
   mason: ">=0.1.0-dev.50 <0.1.0"
+  get_it: ^7.6.2
+  go_router: ^10.1.2
+  flutter_bloc: ^8.1.3
