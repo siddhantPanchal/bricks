@@ -8,24 +8,10 @@ Future<void> run(HookContext context) async {
   // Run `flutter packages get` after generation.
   await Process.run(
     'flutter',
-    ['pub', 'add', 'flutter_bloc'],
+    ['pub', 'add', 'flutter_bloc', 'get_it', 'go_router'],
     runInShell: true,
   );
-  await Process.run(
-    'flutter',
-    ['pub', 'add', 'get_it'],
-    runInShell: true,
-  );
-  await Process.run(
-    'flutter',
-    ['pub', 'add', 'go_router'],
-    runInShell: true,
-  );
-  await Process.run(
-    'flutter',
-    ['pub', 'get'],
-    runInShell: true,
-  );
+  await Process.run('flutter', ['pub', 'get'], runInShell: true);
 
   progress.complete();
 }
